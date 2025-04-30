@@ -1,0 +1,86 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f5f7fa;
+    color: #1e2a38;
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+    transition: all 0.3s ease;
+  }
+  
+  header {
+    background-color: #1e2a38;
+    padding: 1rem;
+    text-align: right;
+  }
+  
+  .lang-toggle button {
+    background-color: #ffffff;
+    color: #1e2a38;
+    border: 1px solid #1e2a38;
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .profile {
+    text-align: center;
+  }
+  
+  .profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid #1e2a38;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(30, 42, 56, 0.1);
+  }
+  
+  h1, h2 {
+    color: #1e2a38;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  .download-btn {
+    background-color: #007acc;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .download-btn:hover {
+    background-color: #005fa3;
+  }
+  
+  
