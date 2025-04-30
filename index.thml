@@ -19,9 +19,9 @@
       <img src="profile.jpg" alt="Roaa Photo" class="profile-img">
       <h1 data-en="Roaa AlQarni" data-ar="رؤى القرني">Roaa AlQarni</h1>
       <p data-en="Recent Graduate - Programming, Full Stack Developer" data-ar="خريجة حديثة - مطورة فل ستاك">
-  Recent Graduate - Programming, Full Stack Developer
-</p>
-</section>
+        Recent Graduate - Programming, Full Stack Developer
+      </p>
+    </section>
 
     <section class="contact">
       <h2 data-en="Contact" data-ar="معلومات التواصل">Contact</h2>
@@ -43,45 +43,34 @@
     <section class="skills">
       <h2 data-en="Skills" data-ar="المهارات">Skills</h2>
       <ul>
-          <li>
-              <span data-en="Problem Solving" data-ar="حل المشكلات">Problem Solving</span> / 
-          </li>
-          <li>
-              <span data-en="Time Management" data-ar="إدارة الوقت">Time Management</span> / 
-          </li>
-          <li>
-              <span data-en="Teamwork" data-ar="العمل الجماعي">Teamwork</span> / 
-          </li>
-          <li>
-              <span data-en="ASP.NET, C#, SQL Server" data-ar="ASP.NET، C#، SQL Server">ASP.NET, C#, SQL Server</span> / 
-          </li>
+        <li data-en="Problem Solving" data-ar="حل المشكلات">Problem Solving</li>
+        <li data-en="Time Management" data-ar="إدارة الوقت">Time Management</li>
+        <li data-en="Teamwork" data-ar="العمل الجماعي">Teamwork</li>
+        <li data-en="ASP.NET, C#, SQL Server" data-ar="ASP.NET، C#، SQL Server">ASP.NET, C#, SQL Server</li>
       </ul>
-  </section>
-  
+    </section>
 
     <section class="training-projects">
       <h2 data-en="Training Projects" data-ar="مشاريع التدريب">Training Projects</h2>
       <ul>
-          <li>
-              <p data-en="1. I developed a family affairs management system: calendar + expense tracking."
-                 data-ar="١. المشروع الأول كان نظام لإدارة شؤون العائلة، يضم تقويم لتنظيم المواعيد العائلية + نظام لتتبع المصاريف. فكرته كانت تسهل علينا كعائلة نرتب أمورنا بشكل عملي وسهل.">
-                1. I developed a family affairs management system: calendar + expense tracking.
-              </p>
-          </li>
-          <li>
-              <p data-en="2. I worked on a management system for King Fahad Medical City: designed during COOP training."
-                 data-ar="٢. المشروع الثاني كان نظام إداري لموظفي مدينة الملك فهد الطبية، واشتغلت عليه خلال التدريب التعاوني. الهدف منه تسهيل عملية إخلاء الطرف وإدارة التصاريح للموظفين، بحيث يكون كل شيء إلكتروني وسريع.">
-                2. I worked on a management system for King Fahad Medical City: designed during COOP training.
-              </p>
-          </li>
+        <li>
+          <p data-en="1. I developed a family affairs management system: calendar + expense tracking."
+             data-ar="١. المشروع الأول كان نظام لإدارة شؤون العائلة، يضم تقويم لتنظيم المواعيد العائلية + نظام لتتبع المصاريف. فكرته كانت تسهل علينا كعائلة نرتب أمورنا بشكل عملي وسهل.">
+            1. I developed a family affairs management system: calendar + expense tracking.
+          </p>
+        </li>
+        <li>
+          <p data-en="2. I worked on a management system for King Fahad Medical City: designed during COOP training."
+             data-ar="٢. المشروع الثاني كان نظام إداري لموظفي مدينة الملك فهد الطبية، واشتغلت عليه خلال التدريب التعاوني. الهدف منه تسهيل عملية إخلاء الطرف وإدارة التصاريح للموظفين، بحيث يكون كل شيء إلكتروني وسريع.">
+            2. I worked on a management system for King Fahad Medical City: designed during COOP training.
+          </p>
+        </li>
       </ul>
-  </section>
-      
+    </section>
 
     <a href="cv.pdf" download class="download-btn">
-        ⬇️ <span data-en="Download CV" data-ar="تحميل السيرة الذاتية">Download CV</span>
-      </a>
-      
+      ⬇️ <span data-en="Download CV" data-ar="تحميل السيرة الذاتية">Download CV</span>
+    </a>
   </main>
 
   <script src="script.js"></script>
