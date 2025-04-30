@@ -45,19 +45,15 @@
       <ul>
           <li>
               <span data-en="Problem Solving" data-ar="حل المشكلات">Problem Solving</span> / 
-              <span data-en="Problem Solving" data-ar="حل المشكلات">حل المشكلات</span>
           </li>
           <li>
               <span data-en="Time Management" data-ar="إدارة الوقت">Time Management</span> / 
-              <span data-en="Time Management" data-ar="إدارة الوقت">إدارة الوقت</span>
           </li>
           <li>
               <span data-en="Teamwork" data-ar="العمل الجماعي">Teamwork</span> / 
-              <span data-en="Teamwork" data-ar="العمل الجماعي">العمل الجماعي</span>
           </li>
           <li>
               <span data-en="ASP.NET, C#, SQL Server" data-ar="ASP.NET، C#، SQL Server">ASP.NET, C#, SQL Server</span> / 
-              <span data-en="ASP.NET, C#, SQL Server" data-ar="ASP.NET، C#، SQL Server">ASP.NET، C#، SQL Server</span>
           </li>
       </ul>
   </section>
