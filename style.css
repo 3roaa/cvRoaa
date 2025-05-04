@@ -34,8 +34,8 @@ h1, h2 {
 }
 
 .profile-img {
-  width: 150px;
-  height: 150px;
+  width: 150;
+  height: 150;
   border-radius: 50%;
 }
 
