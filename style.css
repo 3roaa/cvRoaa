@@ -1,133 +1,98 @@
-/* إضافة خطوط من Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap');
-
+/* General Styles */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
-  color: #333;
+  background-color: #f4f4f4;
 }
 
-/* رأس الصفحة */
 header {
-  background-color: #fff;
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
   text-align: center;
 }
 
 .lang-toggle button {
-  background-color: #ff6f61;
-  color: white;
+  background-color: #fff;
+  color: #333;
   border: none;
   padding: 10px 20px;
-  margin: 5px;
   cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  margin: 0 5px;
 }
 
 .lang-toggle button:hover {
-  background-color: #ff4c38;
+  background-color: #ddd;
 }
 
-/* القسم الرئيسي */
 main {
-  padding: 30px;
-  max-width: 1200px;
-  margin: auto;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-/* التنسيق الخاص بالصورة الشخصية */
-.profile img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-/* الترويسة الخاصة بالاسم */
 h1, h2 {
-  font-family: 'Poppins', sans-serif;
   color: #333;
 }
 
-/* العناوين الفرعية */
-h2 {
-  margin-top: 30px;
-  font-size: 1.8em;
-  color: #ff6f61;
-}
-
-/* النصوص */
-p, ul {
-  line-height: 1.6;
-}
-
-/* قسم الاتصال */
 ul {
   list-style: none;
   padding: 0;
 }
 
-ul li {
-  margin: 10px 0;
+li {
+  padding: 8px 0;
 }
 
-/* الأزرار */
-.download-btn {
-  display: inline-block;
-  background-color: #ff6f61;
-  color: white;
-  padding: 10px 20px;
+/* Profile Section */
+.profile {
+  text-align: center;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  text-decoration: none;
+}
+
+.contact-form button {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 40px;
+}
+
+/* Download Button */
+.download-btn {
+  display: block;
+  text-align: center;
   margin-top: 20px;
-  font-size: 1.2em;
-  transition: background-color 0.3s ease;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .download-btn:hover {
-  background-color: #ff4c38;
-}
-
-/* الأقسام الفرعية */
-section {
-  background-color: white;
-  margin-bottom: 30px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-section ul {
-  padding-left: 20px;
-}
-
-/* العناصر في القائمة */
-ul li i {
-  color: #ff6f61;
-  margin-right: 10px;
-}
-
-/* تعديل التنسيق بين اللغتين */
-.translatable {
-  display: inline-block;
-}
-
-[data-lang="en"] {
-  display: block;
-}
-
-[data-lang="ar"] {
-  display: none;
-}
-
-body[lang="ar"] .translatable[data-lang="ar"] {
-  display: block;
-}
-
-body[lang="ar"] .translatable[data-lang="en"] {
-  display: none;
+  background-color: #555;
 }
