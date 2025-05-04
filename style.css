@@ -1,1 +1,260 @@
+/* Base Styles */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --light-bg: #f9f9f9;
+  --white: #fff;
+  --gray: #95a5a6;
+}
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-bg);
+  transition: all 0.3s ease;
+}
+
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="ltr"] {
+  text-align: left;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 4px solid var(--primary-color);
+}
+
+#name {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+#title {
+  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-weight: 300;
+}
+
+.lang-toggle {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.lang-toggle button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.lang-toggle button:hover {
+  background: #2980b9;
+}
+
+/* Main Content Layout */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.profile {
+  grid-row: span 2;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  border: 4px solid var(--primary-color);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Section Styling */
+section {
+  background: var(--white);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+/* Contact Section */
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact li::before {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.contact a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Education, Training, Experience */
+.education p,
+.training p,
+.experience p {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+ul {
+  padding-right: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Projects Section */
+.projects {
+  grid-column: span 2;
+}
+
+.project {
+  border-left: 4px solid var(--primary-color);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background: var(--light-bg);
+}
+
+.project h3 {
+  color: var(--secondary-color);
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.project h3 span {
+  color: var(--gray);
+  font-weight: normal;
+}
+
+.project-details {
+  margin: 1rem 0;
+}
+
+.tech-used, .tech-stack h4, .project-impact h4 {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.tech-stack ul, .project-impact ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.tech-stack li {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Skills Section */
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background: var(--light-bg);
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* Download Button */
+.download-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: var(--accent-color);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  
+  .profile {
+    grid-row: auto;
+    text-align: center;
+  }
+  
+  .projects {
+    grid-column: auto;
+  }
+}
+
+/* Language-specific styles */
+[lang="ar"] {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+[lang="en"] {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
