@@ -1,13 +1,13 @@
-// Function to switch between languages
 function switchLang(lang) {
   const elements = document.querySelectorAll('[data-en], [data-ar]');
-  elements.forEach(element => {
-    const textEn = element.getAttribute('data-en');
-    const textAr = element.getAttribute('data-ar');
+  elements.forEach(el => {
     if (lang === 'en') {
-      element.textContent = textEn;
-    } else if (lang === 'ar') {
-      element.textContent = textAr;
+      el.textContent = el.getAttribute('data-en');
+    } else {
+      el.textContent = el.getAttribute('data-ar');
     }
   });
+
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
 }
