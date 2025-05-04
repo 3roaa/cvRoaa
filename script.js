@@ -1,10 +1,11 @@
 function switchLang(lang) {
-  // تغيير اتجاه الصفحة
-  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-
-  // تغيير النصوص باستخدام data attributes
-  const elements = document.querySelectorAll('[data-en][data-ar]');
+  const elements = document.querySelectorAll('[data-en]');
   elements.forEach(el => {
     el.textContent = el.getAttribute(`data-${lang}`);
   });
+
+  // تغيير الاتجاه إذا كانت اللغة عربية
+  document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+  document.body.style.textAlign = (lang === 'ar') ? 'right' : 'left';
 }
+
