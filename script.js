@@ -1,7 +1,21 @@
-function switchLang(lang) {
-  document.querySelectorAll('[data-en]').forEach(el => {
-    el.textContent = el.getAttribute(`data-${lang}`);
+// ملف script.js
+
+// دالة لتبديل اللغة
+function switchLang(language) {
+  // تغيير اللغة في الـ body
+  document.body.setAttribute('lang', language);
+
+  // تغيير النصوص في العناصر التي تحتوي على data-en و data-ar
+  const elements = document.querySelectorAll('.translatable');
+
+  elements.forEach(function(element) {
+    const enText = element.getAttribute('data-en');
+    const arText = element.getAttribute('data-ar');
+
+    if (language === 'ar') {
+      element.innerHTML = arText;
+    } else {
+      element.innerHTML = enText;
+    }
   });
-  document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
-  document.documentElement.lang = lang;
 }
