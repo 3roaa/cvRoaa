@@ -4,143 +4,143 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>رؤى القرني | السيرة الذاتية</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
+    <div class="theme-toggle">
+      <button onclick="toggleTheme()" id="themeBtn">
+        <i class="fas fa-moon"></i> الوضع الليلي
+      </button>
+    </div>
+    
     <div class="lang-toggle">
       <button onclick="switchLang('en')">English</button>
       <button onclick="switchLang('ar')">العربية</button>
     </div>
+    
     <h1 id="name">رؤى القرني</h1>
     <p id="title">مبرمجة حديثة التخرج | مطورة فل ستاك</p>
   </header>
 
   <main>
     <section class="profile">
-      <img src="profile.jpg" alt="صورة رؤى" class="profile-img">
+      <img src="profile.jpg" alt="صورة رؤى القرني" class="profile-img">
     </section>
 
     <section class="contact">
-      <h2 id="contact-title">معلومات التواصل</h2>
+      <h2 id="contact-title"><i class="fas fa-id-card"></i> معلومات التواصل</h2>
       <ul>
-        <li>📞 0566439605</li>
-        <li>✉️ roaaqarnia@gmail.com</li>
-        <li>🔗 <a href="https://www.linkedin.com/in/roaa-alqarni9" target="_blank">LinkedIn</a></li>
+        <li><i class="fas fa-phone"></i> 0566439605</li>
+        <li><i class="fas fa-envelope"></i> roaaqarnia@gmail.com</li>
+        <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/roaa-alqarni9" target="_blank" rel="noopener">LinkedIn</a></li>
       </ul>
     </section>
 
     <section class="education">
-      <h2 id="education-title">التعليم</h2>
+      <h2 id="education-title"><i class="fas fa-graduation-cap"></i> التعليم</h2>
       <p>دبلوم برمجة - جامعة الأميرة نورة (2023-2025)</p>
     </section>
 
-   <section class="training">
-  <h2 id="training-title">التدريب التعاوني / Cooperative Training</h2>
-  <p>متدربة فل ستاك – مدينة الملك فهد الطبية / Full Stack Trainee - King Fahad Medical City</p>
-  <ul>
-    <li>برمجة تطبيقات ويب باستخدام ASP.NET Web Forms و MVC / Web application development using ASP.NET Web Forms and MVC</li>
-    <li>تصميم قواعد بيانات SQL Server وتنفيذ عمليات CRUD / Designing SQL Server databases and implementing CRUD operations</li>
-    <li>استخدام ADO.NET وEntity Framework و Visual Studio / Using ADO.NET, Entity Framework and Visual Studio</li>
-  </ul>
-</section>
-
-   <section class="experience">
-  <h2 id="experience-title">الخبرات العملية / Work Experience</h2>
-  <ul>
-    <li>موظفة استقبال – مركز ألوها / Receptionist – Aloha Center</li>
-    <li>أخصائية تقنية (عن بعد) – Smartcat / Remote Technical Specialist – Smartcat</li>
-    <li>متدربة تطوير ويب – مشاريع حقيقية / Web Development Trainee – Real Projects</li>
-  </ul>
-</section>
-    
-    <section class="projects">
-  <h2 id="projects-title">مشاريع / Projects</h2>
-  <div class="project">
-    <h3>نظام إدارة الإخلاء والتصاريح - مدينة الملك فهد الطبية / 
-        <span>Clearance & Permits Management System - King Fahad Medical City</span></h3>
-    <ul>
-      <li>
-        نظام متكامل لإدارة طلبات الإخلاء الطبي والتصاريح /
-        <strong>Integrated system</strong> for managing medical clearance and permit requests
-      </li>
-      <li>
-        سير عمل أوتوماتيكي للموافقة أو الرفض مع إشعارات /
-        <strong>Automated workflow</strong> for approval/rejection with notifications
-      </li>
-      <li>
-        لوحة تحكم إدارية لمراقبة جميع المعاملات /
-        <strong>Admin dashboard</strong> for monitoring all transactions
-      </li>
-      <li>
-        تقارير قابلة للتصدير وتتبع للحالات /
-        <strong>Exportable reports</strong> and case tracking
-      </li>
-      <li>
-        واجهة مستخدم سهلة للموظفين والمدراء /
-        <strong>User-friendly interface</strong> for staff and managers
-      </li>
-    </ul>
-    <p class="tech-used">
-      <strong>التقنيات المستخدمة / Technologies:</strong> 
-      ASP.NET MVC, SQL Server, Entity Framework, JavaScript
-    </p>
-  </div>
-</section>
-    <section class="projects">
-  <h2 id="projects-title">مشاريع / Projects</h2>
-  <div class="project">
-    <h3>النظام العائلي الذكي - مشروع شخصي / 
-        <span>Smart Family System - Personal Project</span></h3>
-    
-    <div class="project-details">
-      <p>مشروع تطوير ويب عائلي شامل باختياري الشخصي /
-         <em>A comprehensive family web project developed by personal initiative</em></p>
-      
-      <h4>المميزات الرئيسية / Key Features:</h4>
+    <section class="training">
+      <h2 id="training-title"><i class="fas fa-laptop-code"></i> التدريب التعاوني / Cooperative Training</h2>
+      <p>متدربة فل ستاك – مدينة الملك فهد الطبية / Full Stack Trainee - King Fahad Medical City</p>
       <ul>
-        <li>
-          <strong>تقويم عائلي مشترك</strong> لمشاركة الأحداث والمناسبات /
-          <strong>Shared family calendar</strong> for events and occasions
-        </li>
-        <li>
-          <strong>نظام إدارة مالية</strong> مع تتبع المصروفات والدخل /
-          <strong>Financial management</strong> with expense/income tracking
-        </li>
-        <li>
-          <strong>تحديد الأهداف العائلية</strong> السنوية مع متابعة الإنجاز /
-          <strong>Annual family goals</strong> with progress tracking
-        </li>
-        <li>
-          <strong>لوحة تحكم تفاعلية</strong> مع إحصائيات مرئية /
-          <strong>Interactive dashboard</strong> with visual statistics
-        </li>
+        <li>برمجة تطبيقات ويب باستخدام ASP.NET Web Forms و MVC / Web application development using ASP.NET Web Forms and MVC</li>
+        <li>تصميم قواعد بيانات SQL Server وتنفيذ عمليات CRUD / Designing SQL Server databases and implementing CRUD operations</li>
+        <li>استخدام ADO.NET وEntity Framework و Visual Studio / Using ADO.NET, Entity Framework and Visual Studio</li>
       </ul>
-      
-      <div class="tech-stack">
-        <h4>التقنيات المستخدمة / Technology Stack:</h4>
+    </section>
+
+    <section class="experience">
+      <h2 id="experience-title"><i class="fas fa-briefcase"></i> الخبرات العملية / Work Experience</h2>
+      <ul>
+        <li>موظفة استقبال – مركز ألوها / Receptionist – Aloha Center</li>
+        <li>أخصائية تقنية (عن بعد) – Smartcat / Remote Technical Specialist – Smartcat</li>
+        <li>متدربة تطوير ويب – مشاريع حقيقية / Web Development Trainee – Real Projects</li>
+      </ul>
+    </section>
+    
+    <section class="projects">
+      <h2 id="projects-title"><i class="fas fa-project-diagram"></i> مشاريع / Projects</h2>
+      <div class="project">
+        <h3>نظام إدارة الإخلاء والتصاريح - مدينة الملك فهد الطبية / 
+            <span>Clearance & Permits Management System - King Fahad Medical City</span></h3>
         <ul>
-          <li>ASP.NET Core</li>
-          <li>SQL Server </li>
-          <li>Entity Framework</li>
-          <li>JavaScript + jQuery</li>
+          <li>
+            نظام متكامل لإدارة طلبات الإخلاء الطبي والتصاريح /
+            <strong>Integrated system</strong> for managing medical clearance and permit requests
+          </li>
+          <li>
+            سير عمل أوتوماتيكي للموافقة أو الرفض مع إشعارات /
+            <strong>Automated workflow</strong> for approval/rejection with notifications
+          </li>
+          <li>
+            لوحة تحكم إدارية لمراقبة جميع المعاملات /
+            <strong>Admin dashboard</strong> for monitoring all transactions
+          </li>
+          <li>
+            تقارير قابلة للتصدير وتتبع للحالات /
+            <strong>Exportable reports</strong> and case tracking
+          </li>
+          <li>
+            واجهة مستخدم سهلة للموظفين والمدراء /
+            <strong>User-friendly interface</strong> for staff and managers
+          </li>
         </ul>
+        <p class="tech-used">
+          <strong>التقنيات المستخدمة / Technologies:</strong> 
+          ASP.NET MVC, SQL Server, Entity Framework, JavaScript
+        </p>
       </div>
-      
-      <div class="project-impact">
-        <h4>الفائدة المتحققة / Achieved Benefits:</h4>
-        <ul>
-          <li>تحسين التنظيم والتواصل العائلي بنسبة 80%</li>
-          <li>زيادة الوعي المالي والعائلي</li>
-          <li>تسهيل تحقيق الأهداف المشتركة</li>
-        </ul>
+    </section>
+    
+    <section class="projects">
+      <h2 id="projects-title"><i class="fas fa-project-diagram"></i> مشاريع / Projects</h2>
+      <div class="project">
+        <h3>النظام العائلي الذكي - مشروع شخصي / 
+            <span>Smart Family System - Personal Project</span></h3>
+        
+        <div class="project-details">
+          <p>مشروع تطوير ويب عائلي شامل باختياري الشخصي /
+             <em>A comprehensive family web project developed by personal initiative</em></p>
+          
+          <h4>المميزات الرئيسية / Key Features:</h4>
+          <ul>
+            <li>
+              <strong>تقويم عائلي مشترك</strong> لمشاركة الأحداث والمناسبات /
+              <strong>Shared family calendar</strong> for events and occasions
+            </li>
+            <li>
+              <strong>نظام إدارة مالية</strong> مع تتبع المصروفات والدخل /
+              <strong>Financial management</strong> with expense/income tracking
+            </li>
+            <li>
+              <strong>تحديد الأهداف العائلية</strong> السنوية مع متابعة الإنجاز /
+              <strong>Annual family goals</strong> with progress tracking
+            </li>
+            <li>
+              <strong>لوحة تحكم تفاعلية</strong> مع إحصائيات مرئية /
+              <strong>Interactive dashboard</strong> with visual statistics
+            </li>
+          </ul>
+          
+          <div class="tech-used">
+            <h4>التقنيات المستخدمة / Technology Stack:</h4>
+            <ul>
+              <li>ASP.NET Core</li>
+              <li>SQL Server</li>
+              <li>Entity Framework</li>
+              <li>JavaScript + jQuery</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
     
     <section class="skills">
-      <h2 id="skills-title">المهارات الفنية</h2>
+      <h2 id="skills-title"><i class="fas fa-code"></i> المهارات الفنية</h2>
       <ul>
         <li>C#, Java, Python, JavaScript, HTML, CSS, PHP</li>
         <li>ASP.NET, Entity Framework, SQL Server</li>
@@ -148,7 +148,7 @@
     </section>
 
     <section class="languages">
-      <h2 id="languages-title">اللغات</h2>
+      <h2 id="languages-title"><i class="fas fa-language"></i> اللغات</h2>
       <ul>
         <li>العربية (اللغة الأم)</li>
         <li>الإنجليزية (متوسطة)</li>
@@ -156,7 +156,7 @@
     </section>
 
     <a href="RoaaAlqarni.pdf" download class="download-btn">
-      ⬇️ تحميل السيرة الذاتية
+      <i class="fas fa-download"></i> تحميل السيرة الذاتية
     </a>
   </main>
 
