@@ -5,27 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>رؤى القرني | السيرة الذاتية</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <div class="theme-toggle">
-      <button onclick="toggleTheme()" id="themeBtn">
-        <i class="fas fa-moon"></i> الوضع الليلي
+    <div class="controls">
+      <button id="themeBtn" class="theme-toggle">
+        <i class="fas fa-moon"></i> <span id="themeText">الوضع الليلي</span>
       </button>
+      <div class="lang-toggle">
+        <button onclick="switchLang('en')">English</button>
+        <button onclick="switchLang('ar')" class="active">العربية</button>
+      </div>
     </div>
     
-    <div class="lang-toggle">
-      <button onclick="switchLang('en')">English</button>
-      <button onclick="switchLang('ar')">العربية</button>
+    <div class="header-content">
+      <h1 id="mainTitle">رؤى القرني</h1>
+      <p id="jobTitle">مبرمجة وتطوير ويب | خبرة في ASP.NET و SQL</p>
     </div>
-    
-    <h1 id="name">رؤى القرني</h1>
-    <p id="title">مبرمجة وتطوير ويب | خبرة في ASP.NET و SQL</p>
   </header>
 
   <main>
-    <section class="profile">
+      <section class="profile">
       <img src="profile.jpg" alt="صورة رؤى القرني" class="profile-img">
       <p>{Code lover} | Web Developer in progress
         Startup dreamer | Building ideas from scratch</p>
@@ -198,11 +199,15 @@
         <li><strong>الإنجليزية:</strong> متوسطة (قراءة وكتابة ومحادثة)</li>
       </ul>
     </section>
-
-    <a href="RoaaAlqarni_CV.pdf" download class="download-btn">
-      <i class="fas fa-download"></i> تحميل السيرة الذاتية (PDF)
-    </a>
   </main>
- <script src="script.js"></script> 
+    
+    <div class="download-container">
+      <button id="downloadBtn" class="download-btn">
+        <i class="fas fa-download"></i> تحميل السيرة الذاتية
+      </button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
