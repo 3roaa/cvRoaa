@@ -67,6 +67,57 @@ function switchLang(lang) {
     alert('أنت بالفعل في النسخة العربية');
   }
 }
+// 🌙 الوضع الليلي
+const themeBtn = document.getElementById('themeBtn');
+const themeText = document.getElementById('themeText');
+
+themeBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  if (document.body.classList.contains('dark-mode')) {
+    themeText.textContent = 'الوضع النهاري';
+  } else {
+    themeText.textContent = 'الوضع الليلي';
+  }
+});
+
+// 🌍 تبديل اللغة
+function switchLang(lang) {
+  const html = document.documentElement;
+
+  if (lang === 'en') {
+    html.lang = 'en';
+    html.dir = 'ltr';
+    document.getElementById('mainTitle').textContent = 'Roaa Alqarni';
+    document.getElementById('jobTitle').textContent = 'Web Developer | ASP.NET & SQL Experience';
+    document.getElementById('contact-title').innerHTML = '<i class="fas fa-id-card"></i> Contact Information';
+    document.getElementById('education-title').innerHTML = '<i class="fas fa-graduation-cap"></i> Education';
+    document.getElementById('training-title').innerHTML = '<i class="fas fa-laptop-code"></i> Internship';
+    document.getElementById('experience-title').innerHTML = '<i class="fas fa-briefcase"></i> Work Experience';
+    document.getElementById('projects-title').innerHTML = '<i class="fas fa-project-diagram"></i> Projects';
+    document.getElementById('skills-title').innerHTML = '<i class="fas fa-code"></i> Technical Skills';
+    document.getElementById('languages-title').innerHTML = '<i class="fas fa-language"></i> Languages';
+    document.getElementById('downloadBtn').innerHTML = '<i class="fas fa-download"></i> Download Resume';
+
+    document.querySelectorAll('.lang-toggle button').forEach(btn => btn.classList.remove('active'));
+    document.querySelector(".lang-toggle button[onclick=\"switchLang('en')\"]").classList.add('active');
+  } else {
+    html.lang = 'ar';
+    html.dir = 'rtl';
+    document.getElementById('mainTitle').textContent = 'رؤى القرني';
+    document.getElementById('jobTitle').textContent = 'مبرمجة وتطوير ويب | خبرة في ASP.NET و SQL';
+    document.getElementById('contact-title').innerHTML = '<i class="fas fa-id-card"></i> معلومات التواصل';
+    document.getElementById('education-title').innerHTML = '<i class="fas fa-graduation-cap"></i> التعليم';
+    document.getElementById('training-title').innerHTML = '<i class="fas fa-laptop-code"></i> التدريب التعاوني';
+    document.getElementById('experience-title').innerHTML = '<i class="fas fa-briefcase"></i> الخبرات العملية';
+    document.getElementById('projects-title').innerHTML = '<i class="fas fa-project-diagram"></i> المشاريع';
+    document.getElementById('skills-title').innerHTML = '<i class="fas fa-code"></i> المهارات الفنية';
+    document.getElementById('languages-title').innerHTML = '<i class="fas fa-language"></i> اللغات';
+    document.getElementById('downloadBtn').innerHTML = '<i class="fas fa-download"></i> تحميل السيرة الذاتية';
+
+    document.querySelectorAll('.lang-toggle button').forEach(btn => btn.classList.remove('active'));
+    document.querySelector(".lang-toggle button[onclick=\"switchLang('ar')\"]").classList.add('active');
+  }
+}
 
 // تحديث تاريخ آخر تعديل
 function updateLastModifiedDate() {
