@@ -47,7 +47,7 @@ function downloadCV() {
   // يمكنك تغيير الرابط حسب اسم ملفك
   const link = document.createElement('a');
   link.href = 'RoaaAlqarni.pdf';
-  link.download = 'السيرة_الذاتية_رؤى_القرني.pdf';
+  link.download = "Roaalhammed_Cv.pdf';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -87,7 +87,7 @@ function switchLang(lang) {
   if (lang === 'en') {
     html.lang = 'en';
     html.dir = 'ltr';
-    document.getElementById('mainTitle').textContent = 'Roaa Alqarni';
+    document.getElementById('mainTitle').textContent = 'Roaa AlHammed';
     document.getElementById('jobTitle').textContent = 'Web Developer | ASP.NET & SQL Experience';
     document.getElementById('contact-title').innerHTML = '<i class="fas fa-id-card"></i> Contact Information';
     document.getElementById('education-title').innerHTML = '<i class="fas fa-graduation-cap"></i> Education';
@@ -103,7 +103,7 @@ function switchLang(lang) {
   } else {
     html.lang = 'ar';
     html.dir = 'rtl';
-    document.getElementById('mainTitle').textContent = 'رؤى القرني';
+    document.getElementById('mainTitle').textContent = 'رؤى الحامد';
     document.getElementById('jobTitle').textContent = 'مبرمجة وتطوير ويب | خبرة في ASP.NET و SQL';
     document.getElementById('contact-title').innerHTML = '<i class="fas fa-id-card"></i> معلومات التواصل';
     document.getElementById('education-title').innerHTML = '<i class="fas fa-graduation-cap"></i> التعليم';
