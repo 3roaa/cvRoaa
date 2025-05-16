@@ -1,13 +1,14 @@
-/* الخطوط العامة */
+/* الخطوط العامة والاتجاه */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f7f9fc;
-  color: #222;
+  direction: rtl;
   margin: 0;
   padding: 0;
-  direction: rtl;
+  background-color: #f7f9fc;
+  color: #222;
 }
 
+/* الهيدر */
 header {
   background-color: #1f3b57;
   color: #fff;
@@ -25,6 +26,7 @@ header {
   color: #d2e0ea;
 }
 
+/* عناصر التحكم */
 .controls {
   display: flex;
   justify-content: space-between;
@@ -55,6 +57,7 @@ header {
   font-weight: bold;
 }
 
+/* المحتوى الرئيسي */
 main {
   padding: 30px 20px;
   max-width: 900px;
@@ -77,6 +80,7 @@ section h2 {
   padding-bottom: 8px;
 }
 
+/* الملف الشخصي */
 .profile {
   text-align: center;
 }
@@ -90,6 +94,7 @@ section h2 {
   margin-bottom: 15px;
 }
 
+/* القوائم */
 ul {
   list-style: none;
   padding: 0;
@@ -102,6 +107,7 @@ ul li {
   color: #333;
 }
 
+/* الخبرات والمشاريع */
 .experience-item,
 .project {
   margin-bottom: 25px;
@@ -119,12 +125,9 @@ ul li {
   margin-bottom: 5px;
 }
 
-.job-description ul {
-  margin-top: 10px;
-  padding-right: 20px;
-}
-
+.job-description ul,
 .tech-used ul {
+  margin-top: 10px;
   padding-right: 20px;
 }
 
@@ -133,6 +136,7 @@ ul li {
   color: #1f3b57;
 }
 
+/* المهارات */
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -153,10 +157,12 @@ ul li {
   font-size: 0.9em;
 }
 
+/* اللغات */
 .languages ul li {
   margin-bottom: 10px;
 }
 
+/* زر التحميل */
 .download-container {
   text-align: center;
   margin-top: 30px;
@@ -178,18 +184,7 @@ ul li {
   background-color: #274b6d;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .skills-container {
-    flex-direction: column;
-  }
-
-  .controls {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-/* 🌙 الوضع الليلي */
+/* الوضع الليلي 🌙 */
 body.dark-mode {
   background-color: #1e1e2f;
   color: #eaeaea;
@@ -228,3 +223,16 @@ body.dark-mode .download-btn {
 body.dark-mode .download-btn:hover {
   background-color: #89c4ff;
 }
+
+/* استجابة الأجهزة الصغيرة */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
